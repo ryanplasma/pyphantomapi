@@ -1,0 +1,4 @@
+pytest
+betamax
+betamax_serializers
+tox

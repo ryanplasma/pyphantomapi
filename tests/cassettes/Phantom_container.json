@@ -1,0 +1,144 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-03-03T03:26:42",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.21.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/1"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "<html>\r\n<head><title>302 Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n"
+        },
+        "headers": {
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "161"
+          ],
+          "Content-Type": [
+            "text/html"
+          ],
+          "Date": [
+            "Sun, 03 Mar 2019 03:26:42 GMT"
+          ],
+          "Location": [
+            "https://10.0.0.25:443/rest/container/1"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ]
+        },
+        "status": {
+          "code": 302,
+          "message": "Moved Temporarily"
+        },
+        "url": "<BASE_URL>/container/1"
+      }
+    },
+    {
+      "recorded_at": "2019-03-03T03:26:42",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.21.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://10.0.0.25:443/rest/container/1"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-02-14T19:39:51.385799Z\", \"owner\": null, \"id\": 1, \"ingest_app\": \"48f16006-fee0-44fa-89b0-0106c0618527\", \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-02-14T20:11:51.203670Z\", \"version\": 1, \"asset\": 6, \"status\": \"new\", \"owner_name\": null, \"hash\": \"0a39570ccd095a331cb1b11e356e851e\", \"description\": \"Detected event\", \"tags\": [], \"start_time\": \"2019-02-14T19:39:51.203804Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-02-14T19:39:51.957286Z\", \"artifact_count\": 9, \"data\": {\"data_field1\": \"tj4m9u66FzxAp\"}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"Malicious Download Link Detected\", \"source_data_identifier\": \"oxQfB48harksR6tppbeDfD6wSt\", \"end_time\": \"2019-02-14T19:39:51.203709Z\", \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "978"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sun, 03 Mar 2019 03:26:42 GMT"
+          ],
+          "Expires": [
+            "Sun, 03 Mar 2019 03:26:41 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://10.0.0.25:443/rest/container/1"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}

@@ -1,0 +1,144 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-03-03T03:26:42",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.21.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact/1"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "<html>\r\n<head><title>302 Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n"
+        },
+        "headers": {
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "161"
+          ],
+          "Content-Type": [
+            "text/html"
+          ],
+          "Date": [
+            "Sun, 03 Mar 2019 03:26:42 GMT"
+          ],
+          "Location": [
+            "https://10.0.0.25:443/rest/artifact/1"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ]
+        },
+        "status": {
+          "code": 302,
+          "message": "Moved Temporarily"
+        },
+        "url": "<BASE_URL>/artifact/1"
+      }
+    },
+    {
+      "recorded_at": "2019-03-03T03:26:42",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.21.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://10.0.0.25:443/rest/artifact/1"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-02-14T19:39:51.495496Z\", \"owner\": null, \"id\": 1, \"ingest_app\": null, \"container\": 1, \"severity\": \"medium\", \"label\": \"event\", \"version\": 1, \"has_note\": false, \"type\": \"event\", \"cef\": {\"requestClientApplication\": \"\", \"destinationAddress\": \"\", \"deviceFacility\": \"\", \"deviceExternalId\": \"\", \"cn2Label\": \"\", \"deviceCustomDate1\": \"\", \"deviceCustomDate2\": \"\", \"deviceCustomNumber3Label\": \"\", \"destinationDnsDomain\": \"koxkdocvhh.com\", \"deviceCustomString5\": \"\", \"destinationUserName\": \"\", \"fileHash\": \"\", \"filePath\": \"\", \"sourceTranslatedAddress\": \"\", \"fileName\": \"\", \"fileModificationTime\": \"\", \"deviceCustomString5Label\": \"\", \"deviceAddress\": \"\", \"destinationHostName\": \"\", \"fileId\": \"\", \"dpt\": \"\", \"oldfileHash\": \"\", \"destinationServiceName\": \"\", \"sourceNtDomain\": \"\", \"requestMethod\": \"\", \"cn1Label\": \"\", \"sourceDnsDomain\": \"\", \"endTime\": \"\", \"sourceAddress\": \"\", \"dhost\": \"\", \"bytesOut\": \"\", \"sourceUserName\": \"\", \"cn3Label\": \"\", \"deviceCustomString4Label\": \"\", \"cs6Label\": \"\", \"out\": \"\", \"rt\": \"\", \"cnt\": \"\", \"deviceCustomNumber3\": \"\", \"dst\": \"\", \"deviceHostname\": \"\", \"destinationUserPrivileges\": \"\", \"deviceCustomNumber1Label\": \"\", \"externalId\": \"\", \"deviceDirection\": \"\", \"method\": \"\", \"dmac\": \"\", \"oldfileId\": \"\", \"sourceServiceName\": \"\", \"dvchost\": \"\", \"baseEventCount\": \"\", \"duser\": \"\", \"fileSize\": \"\", \"sourcePort\": \"6900\", \"deviceCustomString6\": \"\", \"sourceHostName\": \"\", \"shost\": \"\", \"deviceCustomString3\": \"\", \"cs3Label\": \"\", \"deviceCustomString1\": \"\", \"src\": \"\", \"cn2\": \"\", \"spriv\": \"\", \"destinationTranslatedAddress\": \"\", \"cn1\": \"\", \"deviceCustomString3Label\": \"\", \"suser\": \"\", \"bytesIn\": \"\", \"filePermission\": \"\", \"dntdom\": \"\", \"deviceEventCategory\": \"\", \"deviceCustomString6Label\": \"\", \"app\": \"\", \"smac\": \"\", \"sourceMacAddress\": \"\", \"message\": \"\", \"deviceDnsDomain\": \"\", \"deviceCustomNumber2\": \"\", \"deviceCustomNumber1\": \"\", \"deviceCustomDate2Label\": \"\", \"dpriv\": \"\", \"deviceCustomString4\": \"\", \"suid\": \"\", \"oldfilePermission\": \"\", \"deviceCustomString2\": \"\", \"start\": \"\", \"destinationMacAddress\": \"\", \"msg\": \"\", \"sourceUserId\": \"\", \"requestURL\": \"https://24.33.131.116/older5.tar\", \"deviceProcessName\": \"\", \"sourceTranslatedPort\": \"\", \"oldfileType\": \"\", \"destinationPort\": \"\", \"destinationUserId\": \"\", \"requestCookies\": \"\", \"cn3\": \"\", \"deviceCustomDate1Label\": \"\", \"cs4Label\": \"\", \"transportProtocol\": \"\", \"cat\": \"\", \"deviceMacAddress\": \"\", \"duid\": \"\", \"deviceOutboundInterface\": \"\", \"destinationProcessName\": \"\", \"spt\": \"\", \"cs2Label\": \"\", \"sntdom\": \"\", \"in\": \"\", \"oldfileModificationTime\": \"\", \"oldfileName\": \"\", \"deviceAction\": \"\", \"proto\": \"\", \"deviceCustomString2Label\": \"\", \"fileType\": \"\", \"deviceTranslatedAddress\": \"\", \"fsize\": \"\", \"dproc\": \"\", \"deviceCustomString1Label\": \"\", \"deviceInboundInterface\": \"\", \"fname\": \"\", \"destinationNtDomain\": \"\", \"fileCreateTime\": \"\", \"ApplicationProtocol\": \"\", \"act\": \"\", \"destinationTranslatedPort\": \"\", \"cs1Label\": \"\", \"oldfsize\": \"\", \"startTime\": \"\", \"end\": \"\", \"oldfileCreateTime\": \"\", \"oldfilePath\": \"\", \"deviceCustomNumber2Label\": \"\", \"cs1\": \"\", \"cs5Label\": \"\", \"request\": \"\", \"sourceUserPrivileges\": \"\", \"dvc\": \"\", \"cs5\": \"\", \"cs4\": \"\", \"cs6\": \"\", \"receiptTime\": \"\", \"cs3\": \"\", \"cs2\": \"\"}, \"update_time\": \"2019-02-14T19:39:51.496689Z\", \"hash\": \"b835e145ec0ad3f7a29863f981e53ab4\", \"description\": \"Artifact added by Generator\", \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-02-14T19:39:51.502679Z\", \"kill_chain\": null, \"data\": {\"data_field1\": \"8486ruufSFazM\"}, \"in_case\": false, \"name\": \"Domain Artifact\", \"source_data_identifier\": \"3E4ZTaoZlZ2fpJ551sK7ekbtud\", \"end_time\": null, \"parent_artifact\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "3637"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sun, 03 Mar 2019 03:26:42 GMT"
+          ],
+          "Expires": [
+            "Sun, 03 Mar 2019 03:26:41 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://10.0.0.25:443/rest/artifact/1"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}
