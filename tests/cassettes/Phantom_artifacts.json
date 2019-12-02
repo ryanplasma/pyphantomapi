@@ -25,65 +25,6 @@
           ]
         },
         "method": "GET",
-        "uri": "<BASE_URL>/artifact"
-      },
-      "response": {
-        "body": {
-          "encoding": "ISO-8859-1",
-          "string": "<html>\r\n<head><title>302 Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n"
-        },
-        "headers": {
-          "Connection": [
-            "keep-alive"
-          ],
-          "Content-Length": [
-            "161"
-          ],
-          "Content-Type": [
-            "text/html"
-          ],
-          "Date": [
-            "Sun, 03 Mar 2019 03:26:42 GMT"
-          ],
-          "Location": [
-            "https://10.0.0.25:443/rest/artifact"
-          ],
-          "Server": [
-            "nginx/1.13.7"
-          ]
-        },
-        "status": {
-          "code": 302,
-          "message": "Moved Temporarily"
-        },
-        "url": "<BASE_URL>/artifact"
-      }
-    },
-    {
-      "recorded_at": "2019-03-03T03:26:42",
-      "request": {
-        "body": {
-          "encoding": "utf-8",
-          "string": ""
-        },
-        "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.21.0"
-          ],
-          "ph-auth-token": [
-            "<TOKEN>"
-          ]
-        },
-        "method": "GET",
         "uri": "https://10.0.0.25:443/rest/artifact"
       },
       "response": {
@@ -137,6 +78,726 @@
           "message": "OK"
         },
         "url": "https://10.0.0.25:443/rest/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T02:34:07",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 1, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "636"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 02:34:07 GMT"
+          ],
+          "Expires": [
+            "Sat, 30 Nov 2019 02:34:06 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:04:53",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 2, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "1208"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:04:53 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:04:52 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:04:53",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 2, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "1208"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:04:53 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:04:52 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 3, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:04:53.487430Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:04:53.489009Z\", \"hash\": \"6104822820c9df911c09a03790a96d73\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:04:53.490196Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"ymrqmqsugu\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "1781"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 3, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:04:53.487430Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:04:53.489009Z\", \"hash\": \"6104822820c9df911c09a03790a96d73\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:04:53.490196Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"ymrqmqsugu\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "1781"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 4, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:04:53.487430Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:04:53.489009Z\", \"hash\": \"6104822820c9df911c09a03790a96d73\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:04:53.490196Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"ymrqmqsugu\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:08:00.801432Z\", \"owner\": null, \"id\": 11, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:08:00.802847Z\", \"hash\": \"8573c8e67ee3698cd0b8a6c091b6430c\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:08:00.803867Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"vgwtvlkkha\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2354"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 4, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:04:53.487430Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:04:53.489009Z\", \"hash\": \"6104822820c9df911c09a03790a96d73\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:04:53.490196Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"ymrqmqsugu\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:08:00.801432Z\", \"owner\": null, \"id\": 11, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:08:00.802847Z\", \"hash\": \"8573c8e67ee3698cd0b8a6c091b6430c\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:08:00.803867Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"vgwtvlkkha\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2354"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 5, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:04:53.487430Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:04:53.489009Z\", \"hash\": \"6104822820c9df911c09a03790a96d73\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:04:53.490196Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"ymrqmqsugu\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:08:00.801432Z\", \"owner\": null, \"id\": 11, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:08:00.802847Z\", \"hash\": \"8573c8e67ee3698cd0b8a6c091b6430c\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:08:00.803867Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"vgwtvlkkha\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:08:13.466229Z\", \"owner\": null, \"id\": 12, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:08:13.467061Z\", \"hash\": \"8aecfe8926f69e41627dbaa545b1f7fd\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:08:13.467802Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"smblsfrtul\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2927"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/artifact"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 5, \"data\": [{\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:31:24.444543Z\", \"owner\": null, \"id\": 8, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:31:24.445870Z\", \"hash\": \"14599d6b157e43a4e1f01ad6f4efe865\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:31:24.447685Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"9de66555-1a0e-4293-8959-e58ba8803416\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-11-30T02:34:07.871931Z\", \"owner\": null, \"id\": 9, \"ingest_app\": null, \"container\": 31, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-11-30T02:34:07.873143Z\", \"hash\": \"bc35f395c26f091d74a712dc77bf8063\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-11-30T02:34:07.874791Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"dfikkqtvgd\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:04:53.487430Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:04:53.489009Z\", \"hash\": \"6104822820c9df911c09a03790a96d73\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:04:53.490196Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"ymrqmqsugu\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:08:00.801432Z\", \"owner\": null, \"id\": 11, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:08:00.802847Z\", \"hash\": \"8573c8e67ee3698cd0b8a6c091b6430c\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:08:00.803867Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"vgwtvlkkha\", \"end_time\": null, \"parent_artifact\": null}, {\"parent_container\": null, \"playbook_run\": null, \"create_time\": \"2019-12-02T14:08:13.466229Z\", \"owner\": null, \"id\": 12, \"ingest_app\": null, \"container\": 33, \"severity\": \"medium\", \"label\": null, \"version\": 1, \"has_note\": false, \"type\": null, \"cef\": {}, \"update_time\": \"2019-12-02T14:08:13.467061Z\", \"hash\": \"8aecfe8926f69e41627dbaa545b1f7fd\", \"description\": null, \"tags\": [], \"cef_types\": {}, \"start_time\": \"2019-12-02T14:08:13.467802Z\", \"kill_chain\": null, \"in_case\": false, \"name\": null, \"source_data_identifier\": \"smblsfrtul\", \"end_time\": null, \"parent_artifact\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2927"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/artifact"
       }
     }
   ],

@@ -25,65 +25,6 @@
           ]
         },
         "method": "GET",
-        "uri": "<BASE_URL>/container"
-      },
-      "response": {
-        "body": {
-          "encoding": "ISO-8859-1",
-          "string": "<html>\r\n<head><title>302 Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n"
-        },
-        "headers": {
-          "Connection": [
-            "keep-alive"
-          ],
-          "Content-Length": [
-            "161"
-          ],
-          "Content-Type": [
-            "text/html"
-          ],
-          "Date": [
-            "Sun, 03 Mar 2019 03:26:42 GMT"
-          ],
-          "Location": [
-            "https://10.0.0.25:443/rest/container"
-          ],
-          "Server": [
-            "nginx/1.13.7"
-          ]
-        },
-        "status": {
-          "code": 302,
-          "message": "Moved Temporarily"
-        },
-        "url": "<BASE_URL>/container"
-      }
-    },
-    {
-      "recorded_at": "2019-03-03T03:26:42",
-      "request": {
-        "body": {
-          "encoding": "utf-8",
-          "string": ""
-        },
-        "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.21.0"
-          ],
-          "ph-auth-token": [
-            "<TOKEN>"
-          ]
-        },
-        "method": "GET",
         "uri": "https://10.0.0.25:443/rest/container"
       },
       "response": {
@@ -137,6 +78,1120 @@
           "message": "OK"
         },
         "url": "https://10.0.0.25:443/rest/container"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T02:05:39",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/containers"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"failed\": true, \"message\": \"Requested item not found\"}"
+        },
+        "headers": {
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "55"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 02:05:39 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "url": "<BASE_URL>/containers"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T02:34:07",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 2, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.465911Z\", \"artifact_count\": 1, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "1810"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 02:34:07 GMT"
+          ],
+          "Expires": [
+            "Sat, 30 Nov 2019 02:34:06 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:04:53",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 3, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.955135Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2696"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:04:53 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:04:52 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:04:53",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 3, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.955135Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2696"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:04:53 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:04:52 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:04:53",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 3, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.955135Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "2696"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:04:53 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:04:52 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 4, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.512305Z\", \"artifact_count\": 1, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "3582"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 4, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.512305Z\", \"artifact_count\": 1, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "3582"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 4, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.512305Z\", \"artifact_count\": 1, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "3582"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 5, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.818578Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:00.874698Z\", \"owner\": null, \"id\": 35, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:00.880428Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"ec7cee7b02d4846ceadd306a2afa0961\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:00.880419Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.874591Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"f41bb882-8a72-48d1-b0b7-33f4a4b6afe5\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "4468"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 5, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.818578Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:00.874698Z\", \"owner\": null, \"id\": 35, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:00.880428Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"ec7cee7b02d4846ceadd306a2afa0961\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:00.880419Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.874591Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"f41bb882-8a72-48d1-b0b7-33f4a4b6afe5\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "4468"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 5, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.818578Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:00.874698Z\", \"owner\": null, \"id\": 35, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:00.880428Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"ec7cee7b02d4846ceadd306a2afa0961\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:00.880419Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.874591Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"f41bb882-8a72-48d1-b0b7-33f4a4b6afe5\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "4468"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 6, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.479702Z\", \"artifact_count\": 3, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:13.534843Z\", \"owner\": null, \"id\": 36, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:13.541234Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"a2dc8ed9655fd0b3b893ef9d45711f95\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:13.541224Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.534805Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"be19c2c1-8b2e-476b-a7e8-cfec05e6ca4c\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:00.874698Z\", \"owner\": null, \"id\": 35, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:00.880428Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"ec7cee7b02d4846ceadd306a2afa0961\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:00.880419Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.874591Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"f41bb882-8a72-48d1-b0b7-33f4a4b6afe5\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "5354"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 6, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.479702Z\", \"artifact_count\": 3, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:13.534843Z\", \"owner\": null, \"id\": 36, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:13.541234Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"a2dc8ed9655fd0b3b893ef9d45711f95\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:13.541224Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.534805Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"be19c2c1-8b2e-476b-a7e8-cfec05e6ca4c\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:00.874698Z\", \"owner\": null, \"id\": 35, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:00.880428Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"ec7cee7b02d4846ceadd306a2afa0961\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:00.880419Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.874591Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"f41bb882-8a72-48d1-b0b7-33f4a4b6afe5\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "5354"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 6, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.479702Z\", \"artifact_count\": 3, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.892430Z\", \"artifact_count\": 2, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:04:53.578961Z\", \"owner\": null, \"id\": 34, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:04:53.587825Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"eb2cefca250297711aef85a75fdaa7c2\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:04:53.587815Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.578927Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"816c8e22-27d1-4ded-b801-6c7fa3dc7c69\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:24.530249Z\", \"owner\": null, \"id\": 32, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:24.535744Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"feb1ea994525177a951b825d53df3837\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:24.535737Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.530148Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"cd04c67e-9775-4518-93d9-1b823b5063bd\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:13.534843Z\", \"owner\": null, \"id\": 36, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:13.541234Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"a2dc8ed9655fd0b3b893ef9d45711f95\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:13.541224Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.534805Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"be19c2c1-8b2e-476b-a7e8-cfec05e6ca4c\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-12-02T14:08:00.874698Z\", \"owner\": null, \"id\": 35, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-12-03T02:08:00.880428Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"ec7cee7b02d4846ceadd306a2afa0961\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-12-02T14:08:00.880419Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.874591Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"f41bb882-8a72-48d1-b0b7-33f4a4b6afe5\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "5354"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
       }
     }
   ],

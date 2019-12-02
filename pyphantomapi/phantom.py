@@ -18,7 +18,7 @@ class Phantom(object):
         containers = []
         for container in _data['data']:
             containers.append(models.Container(self, container))
-        return container
+        return containers
 
     def container(self, id):
         _data = self._get("/container/{}".format(id))
@@ -41,8 +41,22 @@ class Phantom(object):
     def create_artifact(self, artifact):
         return self._post('/artifact', artifact)
 
+    def action_runs(self):
+        _data = self._get('/action_run')
+        action_runs = []
+        for action_run in _data['data']:
+            action_runs.append(models.ActionRun(self, action_run))
+        return action_runs
+
+    def action_run(self, id):
+        _data = self._get('/action_run/{}'.format(id))
+        return models.ActionRun(self, _data)
+
     def version(self):
         return self._get('/version')
+
+    def system_info(self):
+        return self._get('/system_info')
 
     def _get(self, path):
         response = self.session.get(self.base_url + path, verify=False)
