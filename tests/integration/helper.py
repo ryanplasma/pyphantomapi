@@ -1,6 +1,8 @@
 import betamax
 import pyphantomapi
 import os
+import random
+import string
 import unittest
 
 
@@ -20,6 +22,10 @@ class IntegrationHelper(unittest.TestCase):
     def cassette_name(self, method, cls=None):
         class_name = cls or self.described_class
         return '_'.join([class_name, method])
+
+    def source_data_identifier(self, length):
+        letters = string.ascii_lowercase
+        return ''.join(random.choice(letters) for i in range(length))
 
     @property
     def described_class(self):

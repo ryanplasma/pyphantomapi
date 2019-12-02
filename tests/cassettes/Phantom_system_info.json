@@ -1,11 +1,11 @@
 {
   "http_interactions": [
     {
-      "recorded_at": "2019-11-30T02:34:07",
+      "recorded_at": "2019-12-01T05:00:17",
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"name\": \"test\"}"
+          "string": ""
         },
         "headers": {
           "Accept": [
@@ -17,12 +17,6 @@
           "Connection": [
             "keep-alive"
           ],
-          "Content-Length": [
-            "16"
-          ],
-          "Content-Type": [
-            "application/json"
-          ],
           "User-Agent": [
             "python-requests/2.22.0"
           ],
@@ -30,13 +24,13 @@
             "<TOKEN>"
           ]
         },
-        "method": "POST",
-        "uri": "<BASE_URL>/container"
+        "method": "GET",
+        "uri": "<BASE_URL>/system_info"
       },
       "response": {
         "body": {
-          "encoding": "ISO-8859-1",
-          "string": "{\"new_artifact_ids\": [], \"id\": 33, \"success\": true}"
+          "encoding": "UTF-8",
+          "string": "{\"base_url\": \"https://192.168.1.111\", \"time_zone\": \"US/Eastern\"}"
         },
         "headers": {
           "Cache-Control": [
@@ -46,19 +40,19 @@
             "keep-alive"
           ],
           "Content-Length": [
-            "51"
+            "64"
           ],
           "Content-Security-Policy": [
             "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
           ],
           "Content-Type": [
-            "text/javascript"
+            "application/json; charset=UTF-8"
           ],
           "Date": [
-            "Sat, 30 Nov 2019 02:34:07 GMT"
+            "Sun, 01 Dec 2019 05:00:17 GMT"
           ],
           "Expires": [
-            "Sat, 30 Nov 2019 02:34:06 GMT"
+            "Sun, 01 Dec 2019 05:00:16 GMT"
           ],
           "Server": [
             "nginx/1.13.7"
@@ -83,7 +77,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "<BASE_URL>/container"
+        "url": "<BASE_URL>/system_info"
       }
     },
     {
@@ -91,7 +85,7 @@
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"name\": \"test\"}"
+          "string": ""
         },
         "headers": {
           "Accept": [
@@ -103,12 +97,6 @@
           "Connection": [
             "keep-alive"
           ],
-          "Content-Length": [
-            "16"
-          ],
-          "Content-Type": [
-            "application/json"
-          ],
           "User-Agent": [
             "python-requests/2.22.0"
           ],
@@ -116,13 +104,13 @@
             "<TOKEN>"
           ]
         },
-        "method": "POST",
-        "uri": "<BASE_URL>/container"
+        "method": "GET",
+        "uri": "<BASE_URL>/system_info"
       },
       "response": {
         "body": {
-          "encoding": "ISO-8859-1",
-          "string": "{\"new_artifact_ids\": [], \"id\": 34, \"success\": true}"
+          "encoding": "UTF-8",
+          "string": "{\"base_url\": \"https://192.168.1.111\", \"time_zone\": \"US/Eastern\"}"
         },
         "headers": {
           "Cache-Control": [
@@ -132,13 +120,13 @@
             "keep-alive"
           ],
           "Content-Length": [
-            "51"
+            "64"
           ],
           "Content-Security-Policy": [
             "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
           ],
           "Content-Type": [
-            "text/javascript"
+            "application/json; charset=UTF-8"
           ],
           "Date": [
             "Mon, 02 Dec 2019 14:04:53 GMT"
@@ -169,7 +157,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "<BASE_URL>/container"
+        "url": "<BASE_URL>/system_info"
       }
     },
     {
@@ -177,7 +165,7 @@
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"name\": \"test\"}"
+          "string": ""
         },
         "headers": {
           "Accept": [
@@ -189,12 +177,6 @@
           "Connection": [
             "keep-alive"
           ],
-          "Content-Length": [
-            "16"
-          ],
-          "Content-Type": [
-            "application/json"
-          ],
           "User-Agent": [
             "python-requests/2.22.0"
           ],
@@ -202,13 +184,13 @@
             "<TOKEN>"
           ]
         },
-        "method": "POST",
-        "uri": "<BASE_URL>/container"
+        "method": "GET",
+        "uri": "<BASE_URL>/system_info"
       },
       "response": {
         "body": {
-          "encoding": "ISO-8859-1",
-          "string": "{\"new_artifact_ids\": [], \"id\": 35, \"success\": true}"
+          "encoding": "UTF-8",
+          "string": "{\"base_url\": \"https://192.168.1.111\", \"time_zone\": \"US/Eastern\"}"
         },
         "headers": {
           "Cache-Control": [
@@ -218,13 +200,13 @@
             "keep-alive"
           ],
           "Content-Length": [
-            "51"
+            "64"
           ],
           "Content-Security-Policy": [
             "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
           ],
           "Content-Type": [
-            "text/javascript"
+            "application/json; charset=UTF-8"
           ],
           "Date": [
             "Mon, 02 Dec 2019 14:08:00 GMT"
@@ -255,7 +237,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "<BASE_URL>/container"
+        "url": "<BASE_URL>/system_info"
       }
     },
     {
@@ -263,7 +245,7 @@
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"name\": \"test\"}"
+          "string": ""
         },
         "headers": {
           "Accept": [
@@ -275,12 +257,6 @@
           "Connection": [
             "keep-alive"
           ],
-          "Content-Length": [
-            "16"
-          ],
-          "Content-Type": [
-            "application/json"
-          ],
           "User-Agent": [
             "python-requests/2.22.0"
           ],
@@ -288,13 +264,13 @@
             "<TOKEN>"
           ]
         },
-        "method": "POST",
-        "uri": "<BASE_URL>/container"
+        "method": "GET",
+        "uri": "<BASE_URL>/system_info"
       },
       "response": {
         "body": {
-          "encoding": "ISO-8859-1",
-          "string": "{\"new_artifact_ids\": [], \"id\": 36, \"success\": true}"
+          "encoding": "UTF-8",
+          "string": "{\"base_url\": \"https://192.168.1.111\", \"time_zone\": \"US/Eastern\"}"
         },
         "headers": {
           "Cache-Control": [
@@ -304,13 +280,13 @@
             "keep-alive"
           ],
           "Content-Length": [
-            "51"
+            "64"
           ],
           "Content-Security-Policy": [
             "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
           ],
           "Content-Type": [
-            "text/javascript"
+            "application/json; charset=UTF-8"
           ],
           "Date": [
             "Mon, 02 Dec 2019 14:08:13 GMT"
@@ -341,7 +317,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "<BASE_URL>/container"
+        "url": "<BASE_URL>/system_info"
       }
     },
     {
@@ -349,7 +325,7 @@
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"name\": \"test\"}"
+          "string": ""
         },
         "headers": {
           "Accept": [
@@ -361,12 +337,6 @@
           "Connection": [
             "keep-alive"
           ],
-          "Content-Length": [
-            "16"
-          ],
-          "Content-Type": [
-            "application/json"
-          ],
           "User-Agent": [
             "python-requests/2.22.0"
           ],
@@ -374,13 +344,13 @@
             "<TOKEN>"
           ]
         },
-        "method": "POST",
-        "uri": "<BASE_URL>/container"
+        "method": "GET",
+        "uri": "<BASE_URL>/system_info"
       },
       "response": {
         "body": {
-          "encoding": "ISO-8859-1",
-          "string": "{\"new_artifact_ids\": [], \"id\": 37, \"success\": true}"
+          "encoding": "UTF-8",
+          "string": "{\"base_url\": \"https://192.168.1.111\", \"time_zone\": \"US/Eastern\"}"
         },
         "headers": {
           "Cache-Control": [
@@ -390,13 +360,13 @@
             "keep-alive"
           ],
           "Content-Length": [
-            "51"
+            "64"
           ],
           "Content-Security-Policy": [
             "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
           ],
           "Content-Type": [
-            "text/javascript"
+            "application/json; charset=UTF-8"
           ],
           "Date": [
             "Mon, 02 Dec 2019 14:12:24 GMT"
@@ -427,7 +397,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "<BASE_URL>/container"
+        "url": "<BASE_URL>/system_info"
       }
     }
   ],

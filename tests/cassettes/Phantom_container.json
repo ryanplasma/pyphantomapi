@@ -25,65 +25,6 @@
           ]
         },
         "method": "GET",
-        "uri": "<BASE_URL>/container/1"
-      },
-      "response": {
-        "body": {
-          "encoding": "ISO-8859-1",
-          "string": "<html>\r\n<head><title>302 Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n"
-        },
-        "headers": {
-          "Connection": [
-            "keep-alive"
-          ],
-          "Content-Length": [
-            "161"
-          ],
-          "Content-Type": [
-            "text/html"
-          ],
-          "Date": [
-            "Sun, 03 Mar 2019 03:26:42 GMT"
-          ],
-          "Location": [
-            "https://10.0.0.25:443/rest/container/1"
-          ],
-          "Server": [
-            "nginx/1.13.7"
-          ]
-        },
-        "status": {
-          "code": 302,
-          "message": "Moved Temporarily"
-        },
-        "url": "<BASE_URL>/container/1"
-      }
-    },
-    {
-      "recorded_at": "2019-03-03T03:26:42",
-      "request": {
-        "body": {
-          "encoding": "utf-8",
-          "string": ""
-        },
-        "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.21.0"
-          ],
-          "ph-auth-token": [
-            "<TOKEN>"
-          ]
-        },
-        "method": "GET",
         "uri": "https://10.0.0.25:443/rest/container/1"
       },
       "response": {
@@ -137,6 +78,640 @@
           "message": "OK"
         },
         "url": "https://10.0.0.25:443/rest/container/1"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T01:46:22",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/1"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"failed\": true, \"message\": \"Requested item not found\"}"
+        },
+        "headers": {
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "55"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 01:46:22 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "url": "<BASE_URL>/container/1"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T02:00:31",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 8, \"data\": [{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:44:57.989932Z\", \"owner\": null, \"id\": 11, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:44:57.995095Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"f2d1d25a3625f9f113facb07a9941965\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:44:57.995089Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:44:57.989909Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"dbaff3b6-657f-4903-8972-04d7f317382f\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:59:58.687583Z\", \"owner\": null, \"id\": 17, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:59:58.694835Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"b63152caf42bf4e9bd03d750c00673c8\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:59:58.694826Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:59:58.687558Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"d6e1b112-9b24-46ec-a24b-15b4706480b7\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:45:26.120138Z\", \"owner\": null, \"id\": 12, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:45:26.125456Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"4f2566e82e44ff3640976f0303195a9f\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:45:26.125448Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:45:26.120113Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"a405fd78-0266-4c3b-b228-9c902adbc852\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:43:57.946916Z\", \"owner\": null, \"id\": 10, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:43:57.951611Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"44615de25657620882511a688d2cca18\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:43:57.951603Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:43:57.946894Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"decfcdea-5a7c-45fc-9977-4be16a819034\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:57:47.508608Z\", \"owner\": null, \"id\": 15, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:57:47.515854Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"276c1fbfa2adcc2d3ebbafdb3a113df3\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:57:47.515845Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:57:47.508576Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"07ac206c-b275-4bb7-86bd-5c73f0d58cb0\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:46:04.146550Z\", \"owner\": null, \"id\": 13, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:46:04.151414Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"a198adb586dc2b5f1b5e10ad809faa6a\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:46:04.151407Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:46:04.146526Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"a7507098-8b3c-416b-b072-2576e778467d\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:59:56.080582Z\", \"owner\": null, \"id\": 16, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:59:56.086628Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6b5d0a5fb341d00d6558315e59cbe080\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:59:56.086609Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:59:56.080550Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"95025b07-915a-4259-b9ee-42c31e22ad7d\", \"end_time\": null, \"container_update_time\": null}, {\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T01:46:22.435396Z\", \"owner\": null, \"id\": 14, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T13:46:22.443087Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"f477a733748a08207828ae8cd7b515d3\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T01:46:22.443078Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T01:46:22.435373Z\", \"artifact_count\": 0, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"36e89b8d-e5ea-4c3f-8919-c9eaa724eda9\", \"end_time\": null, \"container_update_time\": null}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "7126"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 02:00:31 GMT"
+          ],
+          "Expires": [
+            "Sat, 30 Nov 2019 02:00:30 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T02:18:47",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/20"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:01:44.894584Z\", \"owner\": null, \"id\": 20, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:01:44.899373Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"b3c62541c4b29a8dbdf3d6a4bde6f1d0\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:01:44.899364Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:17:05.480207Z\", \"artifact_count\": 1, \"data\": {}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"381a9a65-b60a-4c41-a424-c309823d0df6\", \"end_time\": null, \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 02:18:47 GMT"
+          ],
+          "Expires": [
+            "Sat, 30 Nov 2019 02:18:46 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container/20"
+      }
+    },
+    {
+      "recorded_at": "2019-11-30T02:34:07",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/31"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:31:20.736276Z\", \"owner\": null, \"id\": 31, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"6ffe4034658b2e62fd477df40b69faf5\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:31:20.742281Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:31:24.465911Z\", \"artifact_count\": 1, \"data\": {}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"c86c1ef5-ec40-4346-8542-611325857243\", \"end_time\": null, \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Sat, 30 Nov 2019 02:34:07 GMT"
+          ],
+          "Expires": [
+            "Sat, 30 Nov 2019 02:34:06 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container/31"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:04:53",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/33"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-11-30T02:34:07.955135Z\", \"artifact_count\": 0, \"data\": {}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:04:53 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:04:52 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container/33"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/33"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:04:53.512305Z\", \"artifact_count\": 1, \"data\": {}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container/33"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/33"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:00.818578Z\", \"artifact_count\": 2, \"data\": {}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container/33"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/container/33"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"parent_container\": null, \"node_guid\": null, \"in_case\": false, \"closing_rule_run\": null, \"sensitivity\": \"amber\", \"closing_owner\": null, \"create_time\": \"2019-11-30T02:34:07.955159Z\", \"owner\": null, \"id\": 33, \"ingest_app\": null, \"close_time\": null, \"open_time\": null, \"current_phase\": null, \"container_type\": \"default\", \"label\": \"events\", \"due_time\": \"2019-11-30T14:34:07.960416Z\", \"version\": 1, \"role\": null, \"asset\": null, \"workflow_name\": \"\", \"status\": \"new\", \"owner_name\": null, \"hash\": \"7faaee3542e390abecda8fcc77e76e2e\", \"description\": \"\", \"tags\": [], \"start_time\": \"2019-11-30T02:34:07.960409Z\", \"kill_chain\": null, \"artifact_update_time\": \"2019-12-02T14:08:13.479702Z\", \"artifact_count\": 3, \"data\": {}, \"custom_fields\": {}, \"severity\": \"medium\", \"tenant\": 0, \"name\": \"test\", \"source_data_identifier\": \"5e53a7fb-52d4-4e7a-9c9c-84f51798ac60\", \"end_time\": null, \"container_update_time\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/container/33"
       }
     }
   ],

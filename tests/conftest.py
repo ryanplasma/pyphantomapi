@@ -10,7 +10,7 @@ betamax.Betamax.register_serializer(pretty_json.PrettyJSONSerializer)
 
 with betamax.Betamax.configure() as config:
     config.cassette_library_dir = "tests/cassettes"
-    config.default_cassette_options['record_mode'] = "once"
+    config.default_cassette_options['record_mode'] = "new_episodes"
     config.define_cassette_placeholder(
         "<BASE_URL>", os.environ.get(
             'PHANTOM_BASE_URL', 'https://127.0.0.1/rest'

@@ -1,0 +1,245 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-12-02T14:08:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/action_run/2"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"comment\": \"\", \"node_guid\": \"8bcaa8d3-c016-439b-ac41-491a5c81d23d\", \"playbook_run\": null, \"exec_order\": null, \"creator\": 3, \"assign_time\": null, \"create_time\": \"2019-12-02T13:54:08.828370Z\", \"playbook\": null, \"owner\": 3, \"message\": \"1 action succeeded\", \"targets\": [{\"app_id\": 22, \"parameters\": [{\"domain\": \"google.com\", \"type\": \"A\"}], \"assets\": [1]}], \"close_time\": \"2019-12-02T13:54:09.299159Z\", \"exec_delay_secs\": 0, \"container\": 31, \"id\": 2, \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"type\": \"investigate\", \"status\": \"success\", \"update_time\": \"2019-12-02T13:54:09.299159Z\", \"handle\": null, \"action\": \"lookup domain\", \"ip_address\": \"192.168.223.1\", \"name\": \"user initiated lookup domain action\", \"cancelled\": null, \"cb_fn\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "748"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:00 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:07:59 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/action_run/2"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:08:13",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/action_run/2"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"comment\": \"\", \"node_guid\": \"8bcaa8d3-c016-439b-ac41-491a5c81d23d\", \"playbook_run\": null, \"exec_order\": null, \"creator\": 3, \"assign_time\": null, \"create_time\": \"2019-12-02T13:54:08.828370Z\", \"playbook\": null, \"owner\": 3, \"message\": \"1 action succeeded\", \"targets\": [{\"app_id\": 22, \"parameters\": [{\"domain\": \"google.com\", \"type\": \"A\"}], \"assets\": [1]}], \"close_time\": \"2019-12-02T13:54:09.299159Z\", \"exec_delay_secs\": 0, \"container\": 31, \"id\": 2, \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"type\": \"investigate\", \"status\": \"success\", \"update_time\": \"2019-12-02T13:54:09.299159Z\", \"handle\": null, \"action\": \"lookup domain\", \"ip_address\": \"192.168.223.1\", \"name\": \"user initiated lookup domain action\", \"cancelled\": null, \"cb_fn\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "748"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:08:13 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:08:12 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/action_run/2"
+      }
+    },
+    {
+      "recorded_at": "2019-12-02T14:12:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/action_run/2"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"comment\": \"\", \"node_guid\": \"8bcaa8d3-c016-439b-ac41-491a5c81d23d\", \"playbook_run\": null, \"exec_order\": null, \"creator\": 3, \"assign_time\": null, \"create_time\": \"2019-12-02T13:54:08.828370Z\", \"playbook\": null, \"owner\": 3, \"message\": \"1 action succeeded\", \"targets\": [{\"app_id\": 22, \"parameters\": [{\"domain\": \"google.com\", \"type\": \"A\"}], \"assets\": [1]}], \"close_time\": \"2019-12-02T13:54:09.299159Z\", \"exec_delay_secs\": 0, \"container\": 31, \"id\": 2, \"due_time\": \"2019-11-30T14:31:20.742289Z\", \"version\": 1, \"type\": \"investigate\", \"status\": \"success\", \"update_time\": \"2019-12-02T13:54:09.299159Z\", \"handle\": null, \"action\": \"lookup domain\", \"ip_address\": \"192.168.223.1\", \"name\": \"user initiated lookup domain action\", \"cancelled\": null, \"cb_fn\": null}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "748"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Mon, 02 Dec 2019 14:12:24 GMT"
+          ],
+          "Expires": [
+            "Mon, 02 Dec 2019 14:12:23 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/action_run/2"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}
