@@ -72,6 +72,22 @@ class TestPhantom(IntegrationHelper):
             action_run = self.phantom.action_run(action_runs[0].id)
         assert action_run is not None
 
+    def test_assets(self):
+        """Test the ability of a Phantom instance to get all assets"""
+        cassette_name = self.cassette_name("assets")
+        with self.recorder.use_cassette(cassette_name):
+            assets = self.phantom.assets()
+        assert len(assets) > 0
+
+    def test_asset(self):
+        """Test the ability of a Phantom instance to get one asset"""
+        cassette_name = self.cassette_name("asset")
+        with self.recorder.use_cassette(self.cassette_name("assets")):
+            assets = self.phantom.assets()
+        with self.recorder.use_cassette(cassette_name):
+            asset = self.phantom.asset(assets[0].id)
+        assert asset is not None
+
     def test_version(self):
         """Test the ability of a Phantom instance to get the version."""
         cassette_name = self.cassette_name("version")

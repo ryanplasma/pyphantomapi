@@ -9,7 +9,7 @@ def readme():
 
 setup(
     name='pyphantomapi',
-    version='0.1.4',
+    version='0.2.0',
     description='Python Wrapper for the Splunk Phantom API',
     long_description=readme(),
     long_description_content_type='text/markdown',
@@ -19,7 +19,4 @@ setup(
     author_email='ryan@wordplas.com',
     license='MIT',
     packages=['pyphantomapi'],
-    install_requires=[
-        'requests'
-    ]
-)
+    install_requires=['requests'])

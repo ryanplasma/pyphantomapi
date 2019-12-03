@@ -1,0 +1,85 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-12-03T21:10:27",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/asset"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 12, \"data\": [{\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"Google DNS\", \"tags\": [], \"type\": \"information\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"DNS\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"_reserved_environment_variables\": {}, \"dns_server\": \"8.8.8.8\"}, \"product_vendor\": \"Generic\", \"id\": 1, \"name\": \"google_dns\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"MaxMind IP Geolocation\", \"tags\": [], \"type\": \"information\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"GeoIP2\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {}, \"product_vendor\": \"MaxMind\", \"id\": 2, \"name\": \"maxmind\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"PhishTank investigation service\", \"tags\": [], \"type\": \"investigative\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"PhishTank\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {}, \"product_vendor\": \"OpenDNS\", \"id\": 3, \"name\": \"phishtank\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"Default REST ingestion asset. Provides default Events label.\", \"tags\": [], \"type\": \"generic\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"REST Data Source\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"url\": \"/rest/handler/rest_ingest/[asset_name]\", \"source_ip\": \"127.0.0.1\", \"ingest\": {\"container_label\": \"events\", \"start_time_epoch_utc\": null}}, \"product_vendor\": \"Generic\", \"id\": 4, \"name\": \"rest - events\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"Whois\", \"tags\": [], \"type\": \"information\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"Whois\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {}, \"product_vendor\": \"Generic\", \"id\": 5, \"name\": \"whois\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"\", \"tags\": [], \"type\": \"email\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"SMTP\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"_reserved_environment_variables\": {}, \"ssl_config\": \"StartTLS\", \"encoding\": false, \"server\": \"test\"}, \"product_vendor\": \"Generic\", \"id\": 6, \"name\": \"smtp\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"\", \"tags\": [], \"type\": \"ticketing\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"ServiceNow\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"url\": \"test\", \"_reserved_environment_variables\": {}, \"verify_server_cert\": true, \"ingest\": {\"container_label\": \"events\", \"start_time_epoch_utc\": null}}, \"product_vendor\": \"ServiceNow\", \"id\": 7, \"name\": \"afs servicenow\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"\", \"tags\": [], \"type\": \"information\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"HTTP\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"_reserved_environment_variables\": {}, \"base_url\": \"test\"}, \"product_vendor\": \"Generic\", \"id\": 8, \"name\": \"prod phantom\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"\", \"tags\": [], \"type\": \"reputation\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"VirusTotal\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"_reserved_environment_variables\": {}, \"poll_interval\": 5, \"apikey\": \"H9N77crLim3kZ//QQB+h2g==\", \"rate_limit\": false}, \"product_vendor\": \"VirusTotal\", \"id\": 9, \"name\": \"prod virustotal\"}, {\"action_whitelist\": {}, \"validation\": {}, \"tenants\": [], \"description\": \"\", \"tags\": [], \"type\": \"generic\", \"primary_voting\": 0, \"product_version\": \"\", \"effective_user\": 2, \"product_name\": \"Generator\", \"disabled\": false, \"token\": null, \"version\": 1, \"secondary_voting\": 0, \"configuration\": {\"limit_status_to_new\": true, \"create_artifacts\": 10, \"create_containers\": 10, \"event_severity\": \"Random\", \"ingest\": {\"container_label\": \"events\", \"start_time_epoch_utc\": null}, \"event_sensitivity\": \"Random\", \"event_status\": \"Random\", \"artifact_count_override\": false}, \"product_vendor\": \"Generic\", \"id\": 10, \"name\": \"test gerneator\"}], \"num_pages\": 2}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "4634"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Tue, 03 Dec 2019 21:10:27 GMT"
+          ],
+          "Expires": [
+            "Tue, 03 Dec 2019 21:10:26 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/asset"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}

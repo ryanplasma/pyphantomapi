@@ -52,6 +52,17 @@ class Phantom(object):
         _data = self._get('/action_run/{}'.format(id))
         return models.ActionRun(self, _data)
 
+    def assets(self):
+        _data = self._get('/asset')
+        assets = []
+        for asset in _data['data']:
+            assets.append(models.Asset(self, asset))
+        return assets
+
+    def asset(self, id):
+        _data = self._get('/asset/{}'.format(id))
+        return models.ActionRun(self, _data)
+
     def version(self):
         return self._get('/version')
 
