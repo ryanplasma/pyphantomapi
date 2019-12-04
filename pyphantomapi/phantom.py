@@ -70,6 +70,16 @@ class Phantom(object):
             id=id
         )
 
+    def app_runs(self):
+        return self._query(model=models.AppRun, endpoint='/app_run')
+
+    def app_run(self, id):
+        return self._query(
+            model=models.AppRun,
+            endpoint='/app_run',
+            id=id
+        )
+
     def version(self):
         return self._get('/version')
 
