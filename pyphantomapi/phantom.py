@@ -14,72 +14,78 @@ class Phantom(object):
         self.session.headers.update({'ph-auth-token': self.token})
 
     def containers(self):
-        _data = self._get('/container')
-        containers = []
-        for container in _data['data']:
-            containers.append(models.Container(self, container))
-        return containers
+        return self._query(model=models.Container, endpoint='/container')
 
     def container(self, id):
-        _data = self._get("/container/{}".format(id))
-        return models.Container(self, _data)
+        return self._query(
+            model=models.Container,
+            endpoint='/container',
+            id=id
+        )
 
     def create_container(self, container):
         return self._post('/container', container)
 
     def artifacts(self):
-        _data = self._get('/artifact')
-        artifacts = []
-        for artifact in _data['data']:
-            artifacts.append(models.Artifact(self, artifact))
-        return artifacts
+        return self._query(model=models.Artifact, endpoint='/artifact')
 
     def artifact(self, id):
-        _data = self._get("/artifact/{}".format(id))
-        return models.Artifact(self, _data)
+        return self._query(
+            model=models.Artifact,
+            endpoint='/artifact',
+            id=id
+        )
 
     def create_artifact(self, artifact):
         return self._post('/artifact', artifact)
 
     def action_runs(self):
-        _data = self._get('/action_run')
-        action_runs = []
-        for action_run in _data['data']:
-            action_runs.append(models.ActionRun(self, action_run))
-        return action_runs
+        return self._query(model=models.ActionRun, endpoint='/action_run')
 
     def action_run(self, id):
-        _data = self._get('/action_run/{}'.format(id))
-        return models.ActionRun(self, _data)
+        return self._query(
+            model=models.ActionRun,
+            endpoint='/action_run',
+            id=id
+        )
 
     def assets(self):
-        _data = self._get('/asset')
-        assets = []
-        for asset in _data['data']:
-            assets.append(models.Asset(self, asset))
-        return assets
+        return self._query(model=models.Asset, endpoint='/asset')
 
     def asset(self, id):
-        _data = self._get('/asset/{}'.format(id))
-        return models.ActionRun(self, _data)
+        return self._query(
+            model=models.Asset,
+            endpoint='/asset',
+            id=id
+        )
 
     def apps(self):
-        _data = self._get('/app')
-        apps = []
-        print(_data)
-        for app in _data['data']:
-            apps.append(models.App(self, app))
-        return apps
+        return self._query(model=models.App, endpoint='/app')
 
     def app(self, id):
-        _data = self._get('/app/{}'.format(id))
-        return models.App(self, _data)
+        return self._query(
+            model=models.App,
+            endpoint='/app',
+            id=id
+        )
 
     def version(self):
         return self._get('/version')
 
     def system_info(self):
         return self._get('/system_info')
+
+    def _query(self, model=None, endpoint=None, id=None):
+        if id is None:
+            _data = self._get(endpoint)['data']
+            collection = []
+            for item in _data:
+                collection.append(model(self, item))
+            return collection
+        else:
+            item = self._get(
+                '{endpoint}/{id}'.format(endpoint=endpoint, id=id))
+            return model(self, item)
 
     def _get(self, path):
         response = self.session.get(self.base_url + path, verify=False)
