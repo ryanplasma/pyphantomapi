@@ -1,5 +1,4 @@
-name: Python package
-
+name: Python 3.X Test
 on: [push]
 
 jobs:
