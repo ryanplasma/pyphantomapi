@@ -88,6 +88,22 @@ class TestPhantom(IntegrationHelper):
             asset = self.phantom.asset(assets[0].id)
         assert asset is not None
 
+    def test_apps(self):
+        """Test the ability of a Phantom instance to get all apps"""
+        cassette_name = self.cassette_name("apps")
+        with self.recorder.use_cassette(cassette_name):
+            apps = self.phantom.apps()
+        assert len(apps) > 0
+
+    def test_app(self):
+        """Test the ability of a Phantom instance to get one app"""
+        cassette_name = self.cassette_name("app")
+        with self.recorder.use_cassette(self.cassette_name("apps")):
+            apps = self.phantom.apps()
+        with self.recorder.use_cassette(cassette_name):
+            app = self.phantom.app(apps[0].id)
+        assert app is not None
+
     def test_version(self):
         """Test the ability of a Phantom instance to get the version."""
         cassette_name = self.cassette_name("version")

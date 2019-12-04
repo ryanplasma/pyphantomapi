@@ -63,6 +63,18 @@ class Phantom(object):
         _data = self._get('/asset/{}'.format(id))
         return models.ActionRun(self, _data)
 
+    def apps(self):
+        _data = self._get('/app')
+        apps = []
+        print(_data)
+        for app in _data['data']:
+            apps.append(models.App(self, app))
+        return apps
+
+    def app(self, id):
+        _data = self._get('/app/{}'.format(id))
+        return models.App(self, _data)
+
     def version(self):
         return self._get('/version')
 

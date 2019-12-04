@@ -1,0 +1,85 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-12-04T03:08:04",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/app/1"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_nmap.svg\", \"install_time\": \"2019-07-12T17:58:09.380605Z\", \"id\": 1, \"logo_dark\": \"logo_nmap_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.26\", \"type\": \"information\", \"product_name\": \"NMAP\", \"description\": \"This app integrates with <b>NMAP</b> in order to provide detailed network information\", \"tags\": [], \"app_config\": {}, \"configuration\": {}, \"product_vendor\": \"Generic\", \"publisher\": \"Phantom\", \"name\": \"NMAP Scanner\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"865eb6fc-2d5f-4717-a967-4cf33b2a3c7c\", \"directory\": \"nmapscanner_865eb6fc-2d5f-4717-a967-4cf33b2a3c7c\", \"require_auth_token\": false, \"main_module\": \"nmap_connector.pyc\", \"known_versions\": [\"1.0.26\"]}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "828"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Wed, 04 Dec 2019 03:08:04 GMT"
+          ],
+          "Expires": [
+            "Wed, 04 Dec 2019 03:08:03 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/app/1"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}
