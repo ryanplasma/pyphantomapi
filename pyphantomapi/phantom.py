@@ -80,6 +80,16 @@ class Phantom(object):
             id=id
         )
 
+    def playbook_runs(self):
+        return self._query(model=models.PlaybookRun, endpoint='/playbook_run')
+
+    def playbook_run(self, id):
+        return self._query(
+            model=models.PlaybookRun,
+            endpoint='/playbook_run',
+            id=id
+        )
+
     def version(self):
         return self._get('/version')
 
