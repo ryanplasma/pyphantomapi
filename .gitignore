@@ -117,3 +117,5 @@ dmypy.json
 
 .envrc
 test-reports
+
+.vscode
