@@ -1,0 +1,85 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-12-04T03:08:04",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/app"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 191, \"data\": [{\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_nmap.svg\", \"install_time\": \"2019-07-12T17:58:09.380605Z\", \"id\": 1, \"logo_dark\": \"logo_nmap_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.26\", \"type\": \"information\", \"product_name\": \"NMAP\", \"description\": \"This app integrates with <b>NMAP</b> in order to provide detailed network information\", \"tags\": [], \"app_config\": {}, \"configuration\": {}, \"product_vendor\": \"Generic\", \"publisher\": \"Phantom\", \"name\": \"NMAP Scanner\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"865eb6fc-2d5f-4717-a967-4cf33b2a3c7c\", \"directory\": \"nmapscanner_865eb6fc-2d5f-4717-a967-4cf33b2a3c7c\", \"require_auth_token\": false, \"main_module\": \"nmap_connector.pyc\", \"known_versions\": [\"1.0.26\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_msgfileparser.svg\", \"install_time\": \"2019-07-12T17:58:14.411922Z\", \"id\": 2, \"logo_dark\": \"logo_msgfileparser_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.16\", \"type\": \"email\", \"product_name\": \"MSG File Parser\", \"description\": \"This app parses an outlook .msg file and extracts IOCs into Container and Artifacts\", \"tags\": [], \"app_config\": {}, \"configuration\": {}, \"product_vendor\": \"Phantom\", \"publisher\": \"Splunk\", \"name\": \"MSG File Parser\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"e0b31412-4545-43eb-ad86-b1e466b38e7f\", \"directory\": \"msgfileparser_e0b31412-4545-43eb-ad86-b1e466b38e7f\", \"require_auth_token\": false, \"main_module\": \"msgfileparser_connector.pyc\", \"known_versions\": [\"1.0.16\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_phishme.svg\", \"install_time\": \"2019-07-12T17:58:16.526293Z\", \"id\": 3, \"logo_dark\": \"logo_phishme_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.20\", \"type\": \"investigative\", \"product_name\": \"PhishMe Intelligence\", \"description\": \"This App integrates with PhishMe Intelligence to provide various hunting and reporting actions in addition to threat ingestion\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"username\": {\"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"Username\"}, \"poll_now_ingestion_span\": {\"data_type\": \"numeric\", \"required\": false, \"order\": 2, \"value\": \"15\", \"description\": \"Poll last n days for 'Poll Now'\"}, \"password\": {\"required\": true, \"order\": 1, \"data_type\": \"password\", \"description\": \"Password\"}, \"first_scheduled_ingestion_span\": {\"data_type\": \"numeric\", \"required\": false, \"order\": 3, \"value\": \"10\", \"description\": \"Poll last n days for first scheduled polling\"}}, \"product_vendor\": \"PhishMe\", \"publisher\": \"Phantom\", \"name\": \"PhishMe Intelligence\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"bc515568-d826-4b65-91f6-e02af0c48c6c\", \"directory\": \"phishmeintelligence_bc515568-d826-4b65-91f6-e02af0c48c6c\", \"require_auth_token\": false, \"main_module\": \"phishme_connector.pyc\", \"known_versions\": [\"1.0.20\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_symantec.svg\", \"install_time\": \"2019-07-12T17:58:18.506798Z\", \"id\": 4, \"logo_dark\": \"logo_symantec_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.17\", \"type\": \"sandbox\", \"product_name\": \"Symantec CAS\", \"description\": \"This app supports <b>file investigation</b> on the Symantec Content Analysis System\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"url\": {\"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"URL (e.g. https://10.10.10.10:8082)\"}, \"api_key\": {\"required\": true, \"order\": 2, \"data_type\": \"string\", \"description\": \"API key\"}, \"verify_server_cert\": {\"default\": false, \"order\": 1, \"data_type\": \"boolean\", \"description\": \"Verify server certificate\"}, \"timeout\": {\"default\": 60, \"order\": 3, \"data_type\": \"numeric\", \"description\": \"Websocket timeout in sec\"}}, \"product_vendor\": \"Symantec\", \"publisher\": \"Phantom\", \"name\": \"Symantec CAS\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"7cec56aa-f585-4e3d-8a26-a25af95c1878\", \"directory\": \"symanteccas_7cec56aa-f585-4e3d-8a26-a25af95c1878\", \"require_auth_token\": false, \"main_module\": \"symanteccas_connector.pyc\", \"known_versions\": [\"1.0.17\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_sentinelone.svg\", \"install_time\": \"2019-07-12T17:58:20.445915Z\", \"id\": 5, \"logo_dark\": \"logo_sentinelone_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.2.11\", \"type\": \"endpoint\", \"product_name\": \"SentinelOne\", \"description\": \"This app integrates with the SentinelOne platform to perform prevention, detection, remediation, and forensic endpoint management tasks\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"access_token\": {\"required\": true, \"order\": 1, \"data_type\": \"password\", \"description\": \"REST API Access Token\"}, \"sentinelone_server_url\": {\"default\": \"https://your-mgmt.sentinelone.net\", \"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"SentinelOne Server URL\"}}, \"product_vendor\": \"SentinelOne\", \"publisher\": \"SentinelOne\", \"name\": \"SentinelOne\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"bb05c97e-dc37-4fbf-9366-d69c542e187a\", \"directory\": \"sentinelone_bb05c97e-dc37-4fbf-9366-d69c542e187a\", \"require_auth_token\": false, \"main_module\": \"sentinelone_connector.pyc\", \"known_versions\": [\"1.2.11\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_phantom.svg\", \"install_time\": \"2019-07-12T17:58:22.357573Z\", \"id\": 6, \"logo_dark\": \"logo_phantom_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"2.1.17\", \"type\": \"information\", \"product_name\": \"Phantom\", \"description\": \"This App exposes various Phantom APIs as actions\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"username\": {\"required\": false, \"order\": 2, \"data_type\": \"string\", \"description\": \"Username (for HTTP basic auth)\"}, \"verify_certificate\": {\"default\": false, \"required\": false, \"order\": 4, \"data_type\": \"boolean\", \"description\": \"Verify HTTPS certificate\"}, \"auth_token\": {\"required\": false, \"order\": 1, \"data_type\": \"password\", \"description\": \"Phantom Auth token\"}, \"password\": {\"required\": false, \"order\": 3, \"data_type\": \"password\", \"description\": \"Password (for HTTP basic auth)\"}, \"phantom_server\": {\"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"Phantom IP or Hostname\"}}, \"product_vendor\": \"Phantom\", \"publisher\": \"Phantom\", \"name\": \"Phantom\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"deb82aa9-22cc-4675-9cf1-534b8d006eb7\", \"directory\": \"phantom_deb82aa9-22cc-4675-9cf1-534b8d006eb7\", \"require_auth_token\": false, \"main_module\": \"phantom_connector.pyc\", \"known_versions\": [\"2.1.17\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_windowsdefenderatp.svg\", \"install_time\": \"2019-07-12T17:58:24.449071Z\", \"id\": 7, \"logo_dark\": \"logo_windowsdefenderatp_dark.svg\", \"rest_handler\": \"windowsdefenderatp_connector._handle_rest_request\", \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.4\", \"type\": \"endpoint\", \"product_name\": \"Windows Defender ATP\", \"description\": \"This app integrates with Windows Defender Advanced Threat Protection(ATP) to execute various containment, corrective and investigative actions\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"tenant_id\": {\"required\": true, \"order\": 1, \"data_type\": \"string\", \"description\": \"Tenant ID\"}, \"client_id\": {\"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"Client ID\"}}, \"product_vendor\": \"Microsoft\", \"publisher\": \"Splunk\", \"name\": \"Windows Defender ATP\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"e85407b7-91f0-4019-8fa4-0d29bca741d5\", \"directory\": \"windowsdefenderatp_e85407b7-91f0-4019-8fa4-0d29bca741d5\", \"require_auth_token\": false, \"main_module\": \"windowsdefenderatp_connector.pyc\", \"known_versions\": [\"1.0.4\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_rsa.svg\", \"install_time\": \"2019-07-12T17:58:26.373179Z\", \"id\": 8, \"logo_dark\": \"logo_rsa_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.34\", \"type\": \"siem\", \"product_name\": \"RSA Security Analytics\", \"description\": \"This App supports ingestion and investigative actions on RSA Security Analytics\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"username\": {\"required\": true, \"order\": 2, \"data_type\": \"string\", \"description\": \"Username\"}, \"first_scheduled_ingestion_span\": {\"default\": 10, \"required\": true, \"order\": 5, \"data_type\": \"numeric\", \"description\": \"Poll last n days for first scheduled polling\"}, \"url\": {\"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"URL\"}, \"poll_now_ingestion_span\": {\"default\": 15, \"required\": true, \"order\": 4, \"data_type\": \"numeric\", \"description\": \"Poll last n days for 'Poll Now'\"}, \"verify_server_cert\": {\"default\": false, \"required\": false, \"order\": 1, \"data_type\": \"boolean\", \"description\": \"Verify server certificate\"}, \"max_incidents\": {\"default\": 100, \"required\": true, \"order\": 7, \"data_type\": \"numeric\", \"description\": \"Maximum number of incidents to ingest for scheduled polling\"}, \"incident_manager\": {\"required\": true, \"order\": 6, \"data_type\": \"string\", \"description\": \"Name of Incident Manager\"}, \"password\": {\"required\": true, \"order\": 3, \"data_type\": \"password\", \"description\": \"Password\"}}, \"product_vendor\": \"RSA\", \"publisher\": \"Phantom\", \"name\": \"RSA Security Analytics\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"0bea98e9-a480-4638-923d-67aecb612e4f\", \"directory\": \"rsasecurityanalytics_0bea98e9-a480-4638-923d-67aecb612e4f\", \"require_auth_token\": false, \"main_module\": \"rsasa_connector.pyc\", \"known_versions\": [\"1.0.34\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_code42.svg\", \"install_time\": \"2019-07-12T17:58:28.398995Z\", \"id\": 9, \"logo_dark\": \"logo_code42_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.5\", \"type\": \"endpoint\", \"product_name\": \"Code42\", \"description\": \"This app integrates with Code42 to execute various containment, corrective and investigative actions\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"username\": {\"required\": true, \"order\": 2, \"data_type\": \"string\", \"description\": \"Username\"}, \"place_holder\": {\"order\": 1, \"data_type\": \"ph\", \"description\": \"Placeholder\"}, \"password\": {\"required\": true, \"order\": 3, \"data_type\": \"password\", \"description\": \"Password\"}, \"server_url\": {\"required\": true, \"order\": 0, \"data_type\": \"string\", \"description\": \"Server URL (e.g. https://example.code42.com)\"}}, \"product_vendor\": \"Code42\", \"publisher\": \"Phantom\", \"name\": \"Code42\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"59bb6cc4-6ae0-4bee-827c-5397a0f99cec\", \"directory\": \"code42_59bb6cc4-6ae0-4bee-827c-5397a0f99cec\", \"require_auth_token\": false, \"main_module\": \"code42_connector.pyc\", \"known_versions\": [\"1.0.5\"]}, {\"app_config_render\": null, \"product_version_regex\": \".*\", \"uber_view\": null, \"disabled\": false, \"logo\": \"logo_koodous.svg\", \"install_time\": \"2019-07-12T17:58:30.411840Z\", \"id\": 10, \"logo_dark\": \"logo_koodous_dark.svg\", \"rest_handler\": null, \"appname\": \"-\", \"version\": 1, \"app_version\": \"1.0.8\", \"type\": \"sandbox\", \"product_name\": \"Koodous\", \"description\": \"This app integrates with Koodous to analyze APK files\", \"tags\": [], \"app_config\": {}, \"configuration\": {\"api_key\": {\"required\": true, \"order\": 0, \"data_type\": \"password\", \"description\": \"API Key\"}}, \"product_vendor\": \"Koodous\", \"publisher\": \"Phantom\", \"name\": \"Koodous\", \"release_tag\": null, \"consolidate_widgets\": true, \"appid\": \"ff79d26f-590e-4158-ad33-1dd073ec10a5\", \"directory\": \"koodous_ff79d26f-590e-4158-ad33-1dd073ec10a5\", \"require_auth_token\": false, \"main_module\": \"koodous_connector.pyc\", \"known_versions\": [\"1.0.8\"]}], \"num_pages\": 20}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "12203"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Wed, 04 Dec 2019 03:08:04 GMT"
+          ],
+          "Expires": [
+            "Wed, 04 Dec 2019 03:08:03 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/app"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}
