@@ -1,0 +1,85 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2019-12-04T04:38:56",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.22.0"
+          ],
+          "ph-auth-token": [
+            "<TOKEN>"
+          ]
+        },
+        "method": "GET",
+        "uri": "<BASE_URL>/playbook_run?page_size=10&page=0"
+      },
+      "response": {
+        "body": {
+          "encoding": "ISO-8859-1",
+          "string": "{\"count\": 1, \"data\": [{\"status\": \"success\", \"node_guid\": null, \"update_time\": \"2019-12-04T04:38:51.800923Z\", \"test_mode\": false, \"log_level\": 0, \"run_data\": {}, \"start_time\": \"2019-12-04T04:38:47.096000Z\", \"misc\": {\"scope\": \"new\", \"dbg_token\": \"\", \"parent_playbook_run\": null}, \"action_exec\": [], \"effective_user\": 3, \"owner\": 3, \"version\": 1, \"last_artifact\": 15, \"playbook\": 151, \"cancelled\": null, \"container\": 40, \"message\": \"{\\\"approvals\\\":[{\\\"action\\\":\\\"prompt\\\",\\\"action_name\\\":\\\"prompt_1\\\",\\\"action_run_id\\\":3,\\\"approval_id\\\":2,\\\"approval_name\\\":\\\"prompt_1\\\",\\\"approval_status\\\":\\\"approved\\\",\\\"approval_type\\\":\\\"manual\\\",\\\"close_time\\\":\\\"2019-12-04 04:38:51.703+00\\\",\\\"owner_email\\\":\\\"ryan.m.plas@accenturefederal.com\\\",\\\"owner_type\\\":\\\"User\\\",\\\"start_time\\\":\\\"2019-12-04 04:38:48.078+00\\\"}],\\\"message\\\":\\\"'prompt_1' action executed for 0 parameters\\\",\\\"name\\\":\\\"local/Prompt Test(id=151) playbook_run_id:2\\\",\\\"playbook\\\":\\\"local/Prompt Test\\\",\\\"playbook_run_id\\\":2,\\\"result\\\":[{\\\"action\\\":\\\"prompt\\\",\\\"action_run_id\\\":3,\\\"app_runs\\\":null,\\\"close_time\\\":\\\"2019-12-04T04:38:51.731154+00:00\\\",\\\"create_time\\\":\\\"2019-12-04T04:38:47.988+00:00\\\",\\\"id\\\":3,\\\"message\\\":\\\"Yes\\\",\\\"name\\\":\\\"prompt_1\\\",\\\"responses\\\":[\\\"Yes\\\"],\\\"status\\\":\\\"success\\\",\\\"type\\\":\\\"manual\\\"}],\\\"status\\\":\\\"success\\\"}\\n\", \"ip_address\": \"192.168.223.1\", \"id\": 2}], \"num_pages\": 1}"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "1354"
+          ],
+          "Content-Security-Policy": [
+            "default-src https: data: 'unsafe-inline' 'unsafe-eval'; connect-src https: wss:; upgrade-insecure-requests"
+          ],
+          "Content-Type": [
+            "text/javascript"
+          ],
+          "Date": [
+            "Wed, 04 Dec 2019 04:38:56 GMT"
+          ],
+          "Expires": [
+            "Wed, 04 Dec 2019 04:38:55 GMT"
+          ],
+          "Server": [
+            "nginx/1.13.7"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000; includeSubdomains"
+          ],
+          "Vary": [
+            "Cookie"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "<BASE_URL>/playbook_run?page_size=10&page=0"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.1"
+}
