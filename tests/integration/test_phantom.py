@@ -104,6 +104,22 @@ class TestPhantom(IntegrationHelper):
             app = self.phantom.app(apps['data'][0].id)
         assert app is not None
 
+    def test_app_runs(self):
+        """Test the ability of a Phantom instance to get all app runs"""
+        cassette_name = self.cassette_name("app_runs")
+        with self.recorder.use_cassette(cassette_name):
+            app_runs = self.phantom.app_runs()
+        assert len(app_runs['data']) > 0
+
+    def test_app_run(self):
+        """Test the ability of a Phantom instance to get one app run"""
+        cassette_name = self.cassette_name("app_run")
+        with self.recorder.use_cassette(self.cassette_name("app_runs")):
+            app_runs = self.phantom.app_runs()
+        with self.recorder.use_cassette(cassette_name):
+            app_run = self.phantom.app_run(app_runs['data'][0].id)
+        assert app_run is not None
+
     def test_version(self):
         """Test the ability of a Phantom instance to get the version."""
         cassette_name = self.cassette_name("version")
