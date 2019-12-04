@@ -1,4 +1,5 @@
 import json
+import urllib
 
 import requests
 
@@ -75,9 +76,17 @@ class Phantom(object):
     def system_info(self):
         return self._get('/system_info')
 
-    def _query(self, model=None, endpoint=None, id=None):
+    def _query(self, model=None, endpoint=None, id=None, page_size=10, page=0):
+        query_string = urllib.parse.urlencode({
+            'page_size': page_size,
+            'page': page
+        })
+
         if id is None:
-            _data = self._get(endpoint)['data']
+            _data = self._get(
+                '{endpoint}?{query_string}'.format(
+                    endpoint=endpoint,
+                    query_string=query_string))['data']
             collection = []
             for item in _data:
                 collection.append(model(self, item))

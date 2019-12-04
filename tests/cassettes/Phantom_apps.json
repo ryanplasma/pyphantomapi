@@ -1,7 +1,7 @@
 {
   "http_interactions": [
     {
-      "recorded_at": "2019-12-04T03:08:04",
+      "recorded_at": "2019-12-04T04:16:49",
       "request": {
         "body": {
           "encoding": "utf-8",
@@ -25,7 +25,7 @@
           ]
         },
         "method": "GET",
-        "uri": "<BASE_URL>/app"
+        "uri": "<BASE_URL>/app?page_size=10&page=0"
       },
       "response": {
         "body": {
@@ -49,10 +49,10 @@
             "text/javascript"
           ],
           "Date": [
-            "Wed, 04 Dec 2019 03:08:04 GMT"
+            "Wed, 04 Dec 2019 04:16:49 GMT"
           ],
           "Expires": [
-            "Wed, 04 Dec 2019 03:08:03 GMT"
+            "Wed, 04 Dec 2019 04:16:48 GMT"
           ],
           "Server": [
             "nginx/1.13.7"
@@ -77,7 +77,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "<BASE_URL>/app"
+        "url": "<BASE_URL>/app?page_size=10&page=0"
       }
     }
   ],
