@@ -17,7 +17,7 @@ class TestPhantom(IntegrationHelper):
         cassette_name = self.cassette_name("containers")
         with self.recorder.use_cassette(cassette_name):
             containers = self.phantom.containers()
-        assert len(containers) > 0
+        assert len(containers['data']) > 0
 
     def test_container(self):
         """Test the ability of a Phantom instance to get one container."""
@@ -25,7 +25,7 @@ class TestPhantom(IntegrationHelper):
         with self.recorder.use_cassette(self.cassette_name("containers")):
             containers = self.phantom.containers()
         with self.recorder.use_cassette(cassette_name):
-            container = self.phantom.container(containers[0].id)
+            container = self.phantom.container(containers['data'][0].id)
         assert container is not None
 
     def test_create_artifact(self):
@@ -35,7 +35,7 @@ class TestPhantom(IntegrationHelper):
             containers = self.phantom.containers()
         with self.recorder.use_cassette(cassette_name):
             artifact = self.phantom.create_artifact({
-                'container_id': containers[0].id,
+                'container_id': containers['data'][0].id,
                 'source_data_identifier': self.source_data_identifier(10)
             })
         assert artifact['success']
@@ -45,7 +45,7 @@ class TestPhantom(IntegrationHelper):
         cassette_name = self.cassette_name("artifacts")
         with self.recorder.use_cassette(cassette_name):
             artifacts = self.phantom.artifacts()
-        assert len(artifacts) > 0
+        assert len(artifacts['data']) > 0
 
     def test_artifact(self):
         """Test the ability of a Phantom instance to get one artifact."""
@@ -53,7 +53,7 @@ class TestPhantom(IntegrationHelper):
         with self.recorder.use_cassette(self.cassette_name("artifacts")):
             artifacts = self.phantom.artifacts()
         with self.recorder.use_cassette(cassette_name):
-            artifact = self.phantom.artifact(artifacts[0].id)
+            artifact = self.phantom.artifact(artifacts['data'][0].id)
         assert artifact is not None
 
     def test_action_runs(self):
@@ -61,7 +61,7 @@ class TestPhantom(IntegrationHelper):
         cassette_name = self.cassette_name("action_runs")
         with self.recorder.use_cassette(cassette_name):
             action_runs = self.phantom.action_runs()
-        assert len(action_runs) > 0
+        assert len(action_runs['data']) > 0
 
     def test_action_run(self):
         """Test the ability of a Phantom instance to get one action run"""
@@ -69,7 +69,7 @@ class TestPhantom(IntegrationHelper):
         with self.recorder.use_cassette(self.cassette_name("action_runs")):
             action_runs = self.phantom.action_runs()
         with self.recorder.use_cassette(cassette_name):
-            action_run = self.phantom.action_run(action_runs[0].id)
+            action_run = self.phantom.action_run(action_runs['data'][0].id)
         assert action_run is not None
 
     def test_assets(self):
@@ -77,7 +77,7 @@ class TestPhantom(IntegrationHelper):
         cassette_name = self.cassette_name("assets")
         with self.recorder.use_cassette(cassette_name):
             assets = self.phantom.assets()
-        assert len(assets) > 0
+        assert len(assets['data']) > 0
 
     def test_asset(self):
         """Test the ability of a Phantom instance to get one asset"""
@@ -85,7 +85,7 @@ class TestPhantom(IntegrationHelper):
         with self.recorder.use_cassette(self.cassette_name("assets")):
             assets = self.phantom.assets()
         with self.recorder.use_cassette(cassette_name):
-            asset = self.phantom.asset(assets[0].id)
+            asset = self.phantom.asset(assets['data'][0].id)
         assert asset is not None
 
     def test_apps(self):
@@ -93,7 +93,7 @@ class TestPhantom(IntegrationHelper):
         cassette_name = self.cassette_name("apps")
         with self.recorder.use_cassette(cassette_name):
             apps = self.phantom.apps()
-        assert len(apps) > 0
+        assert len(apps['data']) > 0
 
     def test_app(self):
         """Test the ability of a Phantom instance to get one app"""
@@ -101,7 +101,7 @@ class TestPhantom(IntegrationHelper):
         with self.recorder.use_cassette(self.cassette_name("apps")):
             apps = self.phantom.apps()
         with self.recorder.use_cassette(cassette_name):
-            app = self.phantom.app(apps[0].id)
+            app = self.phantom.app(apps['data'][0].id)
         assert app is not None
 
     def test_version(self):

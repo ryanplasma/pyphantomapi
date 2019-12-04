@@ -83,14 +83,18 @@ class Phantom(object):
         })
 
         if id is None:
-            _data = self._get(
+            response = self._get(
                 '{endpoint}?{query_string}'.format(
                     endpoint=endpoint,
-                    query_string=query_string))['data']
+                    query_string=query_string))
             collection = []
-            for item in _data:
+            for item in response['data']:
                 collection.append(model(self, item))
-            return collection
+            return {
+                'data': collection,
+                'count': response['count'],
+                'num_pages': response['num_pages']
+            }
         else:
             item = self._get(
                 '{endpoint}/{id}'.format(endpoint=endpoint, id=id))
